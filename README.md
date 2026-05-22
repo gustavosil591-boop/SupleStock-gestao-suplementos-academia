@@ -28,6 +28,6 @@ O gerenciamento de tarefas, divisões da Sprint e acompanhamento do progresso da
 
 
 ## 📅 Sprints
-* **Sprint 1 (18/05 a 31/05):** Estruturação, requisitos e controle básico (Cadastro e Estoque).
+* **Sprint 1 (18/05 a 31/05):** Estruturação, requisitos e controle básico, (Cadastro e Estoque), telas no figma.
 * **Sprint 2 (01/06 a 14/06):** Categorização, registro de movimentações e infraestrutura de banco de dados.
 * **Sprint 3 (15/06 a 28/06):** Finalização, testes e documentação final.

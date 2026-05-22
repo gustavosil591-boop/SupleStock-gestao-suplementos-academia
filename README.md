@@ -22,8 +22,9 @@ Projeto desenvolvido para a disciplina de Engenharia de Software.
 *(ainda a decidir quais tecnologias serão utilizadas)*
 
 ## Links de Acompanhamento
-O gerenciamento de tarefas, divisões da Sprint e acompanhamento do progresso da equipe foram organizados através do trello:
+O gerenciamento de tarefas, divisões da Sprint e acompanhamento do progresso da equipe foram organizados através do trello e a crianção de telas foram feitas através do figma:
 - Trello: https://trello.com/invite/b/69ff74d87c9be7c29333872d/ATTIdfc39977dd0b351d878ffeeffea18f23DDB4135C/projeto-engenharia-de-software-suplementos
+- Figma: https://www.figma.com/design/sPt083frERAg2Iny4ttnAq/SupleStock--ES?node-id=0-1&t=3oJhx0GsbNrZy3px-1
 
 
 ## 📅 Sprints

@@ -38,8 +38,10 @@ O design e o fluxo de navegação do sistema foram desenvolvidos utilizando o Fi
 
 ### tela de login:
 <p align="center">
-  <img src="./imagens/login.png" alt="Tela de Login" width="35%" style="margin-right: 10px;">
-  <img src="./imagens/estoque.png" alt="Tela de Estoque" width="35%">
+  <img src="./9b1cb9b7-22b1-474a-a845-3be98d72a7b0.jpg" alt="Tela de Login" width="28%" style="margin-right: 15px; border-radius: 8px;">
+  <img src="./1005b678-9398-4946-b2bd-5090319965a5.jpg" alt="Tela Principal de Estoque" width="28%" style="margin-right: 15px; border-radius: 8px;">
+  > 💡 *Nota de Design: As telas foram projetadas com foco em usabilidade (IHC), contando com uma estrutura em Split Screen para o login e um Dashboard integrado com controle cromático (badges) para alertar sobre produtos vencidos ou próximos do vencimento.*
+  <img src="./c59f184-1398-412a-83ac-a8e7d9966e76.jpg" alt="Tela de Cadastro de Usuário" width="28%" style="border-radius: 8px;">
 </p>
 ## 🚀 Próximos Passos (Sprint 2)
 * Integração com Banco de Dados persistente para armazenamento real dos produtos.

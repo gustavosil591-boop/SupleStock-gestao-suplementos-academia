@@ -1,6 +1,6 @@
 # 🏋️‍♂️ Sistema de Gestão de Suplementos para Academias
 
-> **Status do Projeto:** Em Desenvolvimento (Sprint 1)
+> **Status do Projeto:** Em Desenvolvimento
 
 ## 🎯 Objetivo do Projeto
 Desenvolver um aplicativo funcional de controle de suplementos voltado para academias. O sistema permitirar cadastrar produtos, registrar entradas e saídas, acompanhar o nível de estoque e apoiar a organização das vendas de forma simples e prática, reduzindo perdas.

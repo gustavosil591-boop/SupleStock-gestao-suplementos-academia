@@ -35,15 +35,19 @@ O design e o fluxo de navegação do sistema foram desenvolvidos utilizando o Fi
 ### Telas principais que serão desenvolvidas
 
 ### tela de login:
-![alt text](1005b678-9398-4946-b2bd-5090319965a5.jpg)
-### tela principal
-![alt text](9b1cb9b7-22b1-447a-a845-3be98d72a7b0.jpg)
-### tela de cadastro de usuário
-![alt text](c59f9184-1398-412a-83ac-a8e7d9966e76.jpg)
-
+<p align="center">
+  <img src="./imagens/login.png" alt="Tela de Login" width="35%" style="margin-right: 10px;">
+  <img src="./imagens/estoque.png" alt="Tela de Estoque" width="35%">
+</p>
 ## 🚀 Próximos Passos (Sprint 2)
 * Integração com Banco de Dados persistente para armazenamento real dos produtos.
 * Implementação do sistema de filtragem de suplementos por categoria dinamicamente na tabela.
+
+## 🚀 Como Executar o Projeto Localmente
+
+Como a aplicação primeiramente foi desenvolvida em tecnologias web nativas (HTML, CSS e JavaScript) para demosntrarmos como o sistema iria funcionar na prática. Então você não precisa instalar nenhuma dependência pesada (como Node.js ou Java) para testá-la. Siga o que se fala abaixo:
+
+- aperte com botão esquerdo do mouse em cima do arquivo "index.html", em seguinda selecione a opção "mostrar versão prévia", depois é só abrir no navegador para verificar a base do sistema.
 
 ## 📅 Sprints
 * **Sprint 1 (18/05 a 31/05):** Estruturação, requisitos e controle básico, (Cadastro e Estoque), telas no figma.

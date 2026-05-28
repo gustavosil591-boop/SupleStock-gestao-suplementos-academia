@@ -3,7 +3,7 @@
 > **Status do Projeto:** Em Desenvolvimento
 
 ## 🎯 Objetivo do Projeto
-Desenvolver um aplicativo funcional de controle de suplementos voltado para academias. O sistema permitirar cadastrar produtos, registrar entradas e saídas, acompanhar o nível de estoque e apoiar a organização das vendas de forma simples e prática, reduzindo perdas.
+Desenvolver um aplicativo funcional de controle de suplementos voltado para academias. O sistema permitirar cadastrar produtos, registrar entradas e saídas, acompanhar o nível de estoque e apoiar a organização das vendas de forma simples e prática e terá ícones de alerta de válidade como "produto dentro do prazo", "produto prestes a se vencer" e "produto vencido", com isso o íntuito é tentar reduzir perdas.
 
 ## 👥 Equipe de Desenvolvimento
 Projeto desenvolvido para a disciplina de Engenharia de Software.
@@ -14,9 +14,17 @@ Projeto desenvolvido para a disciplina de Engenharia de Software.
 ## 🚀 Funcionalidades
 - [x] Documentação e Setup do Projeto
 - [x] Cadastro de Suplementos (Nome, categoria, quantidade, lote, etc.)
-- [x] Visualização de Estoque em tempo real
+- [ ] Visualização de Estoque em tempo real
 - [ ] Separação e filtragem por Categoria
 - [ ] Registro de Movimentações (Entradas/Saídas)
+
+## 🚀 Funcionalidades  Adicionais
+
+* **Painel Principal:** Identificação instantânea do status dos lotes através de alertas visuais por cores:
+  * 🔴 **Vermelho:** Produtos já vencidos.
+  * 🟡 **Amarelo:** Produtos na janela crítica de proximidade do vencimento.
+  * 🟢 **Verde:** Produtos dentro do prazo.
+* **Gestão de Inventário por Lotes:** Cadastro detalhado de suplementos vinculando quantidades exatas às suas respectivas datas de vencimento.
 
 ## 🛠️ Tecnologias Utilizadas
 * **Ferramenta de Design:** Figma (Prototipagem)

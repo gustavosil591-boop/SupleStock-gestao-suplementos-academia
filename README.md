@@ -14,9 +14,8 @@ Projeto desenvolvido para a disciplina de Engenharia de Software.
 ## 🚀 Funcionalidades
 - [x] Documentação e Setup do Projeto
 - [x] Cadastro de Suplementos (Nome, categoria, quantidade, lote, etc.)
-- [ ] Visualização de Estoque em tempo real
+- [x] Visualização de Estoque em tempo real
 - [ ] Separação e filtragem por Categoria
-- [ ] Registro de Movimentações (Entradas/Saídas)
 
 ## 🚀 Funcionalidades  Adicionais
 
@@ -30,6 +29,7 @@ Projeto desenvolvido para a disciplina de Engenharia de Software.
 * **Ferramenta de Design:** Figma (Prototipagem)
 * **Ambiente de desenvolvimento:** Github Codespace
 * **Ospedagem do Site:** Vercel (será usado futuramente)
+* **Linguagem de Programação:** A decidir
 
 ## Link de Acompanhamento
 O gerenciamento de tarefas, divisões da Sprint e acompanhamento do progresso da equipe foram organizados através do trello 

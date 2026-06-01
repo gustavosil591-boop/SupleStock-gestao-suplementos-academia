@@ -23,7 +23,6 @@ function carregarEstoque() {
 
 form.addEventListener('submit', function(evento) {
     evento.preventDefault(); 
-
     let novoSuplemento = {
         nome: document.getElementById('nome').value,
         categoria: document.getElementById('categoria').value,
@@ -35,11 +34,10 @@ form.addEventListener('submit', function(evento) {
     };
 
     let estoque = JSON.parse(localStorage.getItem('suplementos')) || [];
-    estoque.push(novoSuplemento);
-    localStorage.setItem('suplementos', JSON.stringify(estoque));
-
-    form.reset();
-    carregarEstoque();
+    estoque.push(novoSuplemento); 
+    localStorage.setItem('suplementos', JSON.stringify(estoque)); 
+    form.reset(); 
+    carregarEstoque(); 
 });
 
 carregarEstoque();

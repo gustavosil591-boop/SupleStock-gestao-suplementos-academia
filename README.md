@@ -64,7 +64,7 @@ Como a aplicação primeiramente foi desenvolvida em tecnologias web nativas (HT
 ## 🚀 Próximos Passos (Sprint 2)
 * Integração com Banco de Dados persistente para armazenamento real dos produtos.
 * Implementação do sistema de filtragem de suplementos por categoria dinamicamente na tabela.
-* Alerta de produtos perto da válidade.'
+* Alerta de produtos perto da válidade.
 
 ## 📅 Sprints
 * **Sprint 1 (18/05 a 31/05):** Estruturação, requisitos e controle básico, (Cadastro e Estoque), telas no figma.

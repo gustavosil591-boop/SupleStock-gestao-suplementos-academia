@@ -34,7 +34,7 @@ Projeto desenvolvido para a disciplina de Engenharia de Software.
 ## Link de Acompanhamento
 O gerenciamento de tarefas, divisões da Sprint e acompanhamento do progresso da equipe foram organizados através do trello 
 - Trello: https://trello.com/invite/b/69ff74d87c9be7c29333872d/ATTIdfc39977dd0b351d878ffeeffea18f23DDB4135C/projeto-engenharia-de-software-suplementos
-- Documento de Requisitos: [[ES 2026] Documento de Requisitos - Sistema de Gestão de Suplementos para Academias 1.pdf](https://github.com/user-attachments/files/28181940/ES.2026.Documento.de.Requisitos.-.Sistema.de.Gestao.de.Suplementos.para.Academias.1.pdf)
+- Documento de Requisitos: [Documento de Requisitos - SupleStock ES (2).pdf](https://github.com/user-attachments/files/28463826/Documento.de.Requisitos.-.SupleStock.ES.2.pdf)
 
 
 ## 🎨 Protótipo da Interface

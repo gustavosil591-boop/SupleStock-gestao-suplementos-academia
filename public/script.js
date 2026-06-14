@@ -1,5 +1,4 @@
-const API_URL = 'https://special-umbrella-5g777xrqr7pqf45v4-3000.app.github.dev/suplementos';
-
+const API_URL = 'http://localhost:3000/suplementos';
 
 const form = document.getElementById('form-suplemento');
 const tabelaCorpo = document.getElementById('tabela-corpo');

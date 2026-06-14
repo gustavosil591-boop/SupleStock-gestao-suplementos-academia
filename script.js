@@ -29,18 +29,21 @@ async function carregarEstoque() {
         produtos.forEach(function(produto) {
             let linha = document.createElement('tr');
             linha.innerHTML = `
-                <td>${produto.nome}</td>
-                <td>${produto.categoria}</td>
-                <td>${produto.quantidade}</td>
-                <td>R$ ${Number(produto.precoCusto).toFixed(2)}</td>
-                <td>R$ ${Number(produto.precoVenda).toFixed(2)}</td>
-                <td>${produto.lote}</td>
-                <td>${produto.validade}</td>
-                <td>
-                    <button class="btn-excluir" onclick="excluirProduto(${produto.id})">Excluir</button>
-                </td>
-            `;
-            tabelaCorpo.appendChild(linha);
+    <td>${produto.nome}</td>
+    <td>${produto.categoria}</td>
+    <td>${produto.quantidade}</td>
+    <td>R$ ${Number(produto.precoCusto).toFixed(2)}</td>
+    <td>R$ ${Number(produto.precoVenda).toFixed(2)}</td>
+    <td>${produto.lote}</td>
+    <td>${produto.validade}</td>
+    <td><button class="btn-excluir">Excluir</button></td>
+`;
+
+linha.querySelector('.btn-excluir').addEventListener('click', function() {
+    excluirProduto(produto.id);
+});
+
+tabelaCorpo.appendChild(linha);
         });
 
     } catch (erro) {

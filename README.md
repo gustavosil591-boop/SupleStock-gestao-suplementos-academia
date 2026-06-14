@@ -81,8 +81,8 @@ Se estiver usando GitHub Codespaces, substitua http://localhost:3000 pela URL ge
 ## 🚀 Próximos Passos (Sprint 3)
 * Sistema final sem bugs.
 * Implementação dos alertas visuais de validade (🔴🟡🟢) na tabela de estoque.
-* Tela de login funcional
-* documentação completa e pronto para a apresentação final
+* Tela de login funcional.
+* documentação completa e pronto para a apresentação final.
 
 ## 📅 Sprints
 * **Sprint 1 (18/05 a 31/05):** Estruturação, requisitos e controle básico, (Cadastro e Estoque), telas no figma.

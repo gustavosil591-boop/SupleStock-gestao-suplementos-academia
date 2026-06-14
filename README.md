@@ -1,4 +1,4 @@
-# 🏋️‍♂️ Sistema de Gestão de Suplementos para Academias
+# 🏋️‍♂️ Sistema de Gestão de Suplementos para Academias - SupleStock
 
 > **Status do Projeto:** Em Desenvolvimento
 

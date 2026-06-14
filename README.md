@@ -15,7 +15,9 @@ Projeto desenvolvido para a disciplina de Engenharia de Software.
 - [x] Documentação e Setup do Projeto
 - [x] Cadastro de Suplementos (Nome, categoria, quantidade, lote, etc.)
 - [x] Visualização de Estoque em tempo real
-- [ ] Separação e filtragem por Categoria
+- [x] Integração com Banco de Dados persistente (JSON-Server)
+- [x] Separação e filtragem por Categoria
+- [x] Exclusão de produtos do estoque
 
 ## 🚀 Funcionalidades  Adicionais
 
@@ -29,8 +31,9 @@ Projeto desenvolvido para a disciplina de Engenharia de Software.
 * **Ferramenta de Design:** Figma (Prototipagem)
 * **Ambiente de desenvolvimento:** Github Codespace
 * **Ospedagem do Site:** Vercel (será usado futuramente)
-* **Linguagem de Programação:** A decidir
-
+* **Linguagem de Programação:** HTML, CSS e JavaScript
+* **Banco de Dados:** JSON-Server
+  
 ## Link de Acompanhamento
 O gerenciamento de tarefas, divisões da Sprint e acompanhamento do progresso da equipe foram organizados através do trello 
 - Trello: https://trello.com/invite/b/69ff74d87c9be7c29333872d/ATTIdfc39977dd0b351d878ffeeffea18f23DDB4135C/projeto-engenharia-de-software-suplementos
@@ -55,11 +58,25 @@ O design e o fluxo de navegação do sistema foram desenvolvidos utilizando o Fi
 ### Tela de Cadastro de Usuário:
 ![alt text](c59f9184-1398-412a-83ac-a8e7d9966e76.jpg)
 
-## 🚀 Como Executar o Projeto Localmente
-
-Como a aplicação primeiramente foi desenvolvida em tecnologias web nativas (HTML, CSS e JavaScript) para demosntrarmos como o sistema iria funcionar na prática. Então você não precisa instalar nenhuma dependência pesada (como Node.js ou Java) para testá-la. Siga o que se fala abaixo:
-
-- aperte com botão esquerdo do mouse em cima do arquivo "index.html", em seguinda selecione a opção "mostrar versão prévia", depois é só abrir no navegador para verificar a base do sistema.
+## 🚀 Como Executar o Projeto Localmente:
+ 
+### É preciso ter:
+* Node.js instalado
+* JSON-Server instalado globalmente
+  
+### Passo a passo
+ 
+```bash
+# 1. Instale o JSON-Server (só na primeira vez)
+npm install -g json-server
+ 
+# 2. Suba o servidor na porta 3000
+json-server --watch db.json --port 3000 --static .
+```
+ 
+Após rodar o comando, acesse o sistema pela URL que aparecer no terminal.
+ 
+> Se estiver usando GitHub Codespaces, substitua `http://localhost:3000` pela URL gerada automaticamente no campo `API_URL` dentro do arquivo `script.js`.
 
 ## 🚀 Próximos Passos (Sprint 2)
 * Integração com Banco de Dados persistente para armazenamento real dos produtos.

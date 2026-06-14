@@ -76,12 +76,13 @@ json-server --watch db.json --port 3000 --static .
  
 Após rodar o comando, acesse o sistema pela URL que aparecer no terminal.
  
-> Se estiver usando GitHub Codespaces, substitua `http://localhost:3000` pela URL gerada automaticamente no campo `API_URL` dentro do arquivo `script.js`.
+Se estiver usando GitHub Codespaces, substitua http://localhost:3000 pela URL gerada automaticamente no campo API_URL  dentro do arquivo script.js.
 
-## 🚀 Próximos Passos (Sprint 2)
-* Integração com Banco de Dados persistente para armazenamento real dos produtos.
-* Implementação do sistema de filtragem de suplementos por categoria dinamicamente na tabela.
-* Alerta de produtos perto da válidade.
+## 🚀 Próximos Passos (Sprint 3)
+* Sistema final sem bugs.
+* Implementação dos alertas visuais de validade (🔴🟡🟢) na tabela de estoque.
+* Tela de login funcional
+* documentação completa e pronto para a apresentação final
 
 ## 📅 Sprints
 * **Sprint 1 (18/05 a 31/05):** Estruturação, requisitos e controle básico, (Cadastro e Estoque), telas no figma.

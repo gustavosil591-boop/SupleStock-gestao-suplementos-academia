@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SupleStock</title>
+    <title>Bem-vindo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,21 +13,25 @@
         <p>Gerencie seu estoque com inteligência</p>
     </header>
     <main>
-        <h1>Bem-vindo</h1>
-        <p>A supleStock é uma solução completa para gerenciar seu estoque de suplementos.</p>
-        
+        <h1>Bem-vindo de volta</h1>
+        <p>Entre com suas credenciais</p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" placeholder="***********">
         <button type="submit" id="btn">Entrar</button>
-        <button type="submit" id="btn2">Cadastre-se</button>
+
+        <p>Ou continue com</p>
+        <button class="social-btn google">Google</button>
+
+        <p>Não tem uma conta? <a href="signup.html">Criar conta</a></p>
     </main>
     <footer>
         
     </footer>
     <script>
         document.getElementById('btn').addEventListener('click', () => {
-        window.location.href = 'login.html';
-        });
-        document.getElementById('btn2').addEventListener('click', () => {
-        window.location.href = 'signup.html';
+        window.location.href = '../index.html';
         });
     </script>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Suplementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="front/img/box.svg" alt="Logo do Site" class="logo">
+        <img src="front/img/supleStock.svg" alt="Logo do Site" class="logo">
+    </header>
+    <div class="container">
+        <h1>Estoque de Suplementos</h1>
+
+        <div class="form-section">
+            <h2>Cadastrar Novo Produto</h2>
+            <form id="form-suplemento">
+
+                <div>
+                    <label for="nome">Nome do Suplemento</label>
+                    <input type="text" id="nome" placeholder="Ex: Whey Protein" required>
+                </div>
+
+                <div>
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" required>
+                        <option value="" disabled selected>Selecione a Categoria</option>
+                        <option value="Proteína">Proteína (Whey, Albumina)</option>
+                        <option value="Creatina">Creatina</option>
+                        <option value="Pré-treino">Pré-treino</option>
+                        <option value="Vitaminas">Multi-Vitamínico</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="quantidade">Quantidade em Estoque</label>
+                    <input type="number" id="quantidade" placeholder="Quantidade" required min="1">
+                </div>
+
+                <div>
+                    <label for="precoCusto">Preço de Custo (R$)</label>
+                    <input type="number" id="precoCusto" placeholder="Ex: 89.90" step="0.01" required>
+                </div>
+
+                <div>
+                    <label for="precoVenda">Preço de Venda (R$)</label>
+                    <input type="number" id="precoVenda" placeholder="Ex: 139.90" step="0.01" required>
+                </div>
+
+                <div>
+                    <label for="lote">Lote do Produto</label>
+                    <input type="text" id="lote" placeholder="Ex: LOT-2025-001" required>
+                </div>
+
+                <div class="campo-inteiro">
+                    <label for="validade">Data de Validade</label>
+                    <input type="date" id="validade" required>
+                </div>
+
+                <button type="submit">Cadastrar Suplemento</button>
+            </form>
+            <div id="mensagem"></div>
+        </div>
+
+        <div class="table-section">
+            <h2>Estoque Atual</h2>
+
+            <div class="filtro-area">
+                <label for="filtro-categoria">Filtrar por categoria:</label>
+                <select id="filtro-categoria">
+                    <option value="Todas">Todas</option>
+                    <option value="Proteína">Proteína</option>
+                    <option value="Creatina">Creatina</option>
+                    <option value="Pré-treino">Pré-treino</option>
+                    <option value="Vitaminas">Multi-Vitamínico</option>
+                </select>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Quantidade</th>
+                        <th>Preço de Custo</th>
+                        <th>Preço de Venda</th>
+                        <th>Lote</th>
+                        <th>Validade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-corpo">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

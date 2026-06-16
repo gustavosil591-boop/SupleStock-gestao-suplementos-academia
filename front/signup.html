@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo do Site" class="logo">
+        <h1>SupleStock</h1>
+        <p>Gerencie seu estoque com inteligência</p>
+    </header>
+    <main>
+        <h1>Cadastre-se</h1>
+        <p>Insira seus dados abaixo</p>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Maria">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Silva">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" placeholder="***********">
+        <label for="confirmPassword">Repita a senha:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="***********">
+        <button id="btn" type="button">Cadastrar</button>
+
+        <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+    </main>
+    <footer>
+        
+    </footer>
+    <script>
+        document.getElementById('btn').addEventListener('click', () => {
+        window.location.href = '../index.html';
+        });
+    </script>
+</html>

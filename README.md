@@ -71,7 +71,7 @@ O design e o fluxo de navegação do sistema foram desenvolvidos utilizando o Fi
 npm install -g json-server
  
 # 2. Suba o servidor na porta 3000
-json-server --watch db.json --port 3000 --static .
+json-server --watch db.json --port 3000
 ```
  
 Após rodar o comando, acesse o sistema pela URL que aparecer no terminal.

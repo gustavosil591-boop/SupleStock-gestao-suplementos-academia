@@ -1,4 +1,35 @@
 {
-  "suplementos": [],
+  "suplementos": [
+    {
+      "nome": "creatina",
+      "categoria": "Creatina",
+      "quantidade": "5",
+      "precoCusto": "80",
+      "precoVenda": "140",
+      "lote": "k876",
+      "validade": "2030-05-08",
+      "id": "whBJz-OpyX0"
+    },
+    {
+      "nome": "vitaminas",
+      "categoria": "Vitaminas",
+      "quantidade": "8",
+      "precoCusto": "90",
+      "precoVenda": "100",
+      "lote": "k876",
+      "validade": "2028-09-08",
+      "id": "2NeilC0T8HU"
+    },
+    {
+      "nome": "energel",
+      "categoria": "Pré-treino",
+      "quantidade": "1",
+      "precoCusto": "10",
+      "precoVenda": "20",
+      "lote": "lot888",
+      "validade": "2026-12-12",
+      "id": "m4hvugO6lFA"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

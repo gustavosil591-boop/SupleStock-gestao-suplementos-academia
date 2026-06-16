@@ -48,15 +48,15 @@ O design e o fluxo de navegação do sistema foram desenvolvidos utilizando o Fi
 ### Telas principais que serão desenvolvidas
 
 ### Tela de Login:
-![alt text](1005b678-9398-4946-b2bd-5090319965a5.jpg)
+![alt text](prototipo/1005b678-9398-4946-b2bd-5090319965a5.jpg)
 
 ### Tela Principla:
-![alt text](9b1cb9b7-22b1-447a-a845-3be98d72a7b0.jpg)
+![alt text](prototipo/9b1cb9b7-22b1-447a-a845-3be98d72a7b0.jpg)
 
 > 💡 *Nota de Design: A tela principal foi projetada com foco em usabilidade (IHC), contando com alertar sobre produtos vencidos ou próximos do vencimento.*
 
 ### Tela de Cadastro de Usuário:
-![alt text](c59f9184-1398-412a-83ac-a8e7d9966e76.jpg)
+![alt text](prototipo/c59f9184-1398-412a-83ac-a8e7d9966e76.jpg)
 
 ## 🚀 Como Executar o Projeto Localmente
 

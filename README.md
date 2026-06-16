@@ -58,25 +58,22 @@ O design e o fluxo de navegação do sistema foram desenvolvidos utilizando o Fi
 ### Tela de Cadastro de Usuário:
 ![alt text](c59f9184-1398-412a-83ac-a8e7d9966e76.jpg)
 
-## 🚀 Como Executar o Projeto Localmente:
- 
-### É preciso ter:
+## 🚀 Como Executar o Projeto Localmente
+
+### Pré-requisitos
 * Node.js instalado
 * JSON-Server instalado globalmente
-  
+
 ### Passo a passo
- 
-```bash
+
 # 1. Instale o JSON-Server (só na primeira vez)
 npm install -g json-server
- 
-# 2. Suba o servidor na porta 3000
-json-server --watch db.json --port 3000
-```
- 
-Após rodar o comando, acesse o sistema pela URL que aparecer no terminal.
- 
-Se estiver usando GitHub Codespaces, substitua http://localhost:3000 pela URL gerada automaticamente no campo API_URL  dentro do arquivo script.js.
+
+# 2. Instale as dependências do projeto (só uma vez)
+npm install
+
+# 3. Suba o projeto completo
+npm start
 
 ## 🚀 Próximos Passos (Sprint 3)
 * Sistema final sem bugs.

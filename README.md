@@ -66,13 +66,13 @@ O design e o fluxo de navegação do sistema foram desenvolvidos utilizando o Fi
 
 ### Passo a passo
 
-# 1. Instale o JSON-Server (só na primeira vez)
+### 1. Instale o JSON-Server (só na primeira vez)
 npm install -g json-server
 
-# 2. Instale as dependências do projeto (só uma vez)
+### 2. Instale as dependências do projeto (só uma vez)
 npm install
 
-# 3. Suba o projeto completo
+### 3. Suba o projeto completo
 npm start
 
 ## 🚀 Próximos Passos (Sprint 3)

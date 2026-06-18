@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupleStock - Cadastro de Usuários</title>
+
+    <link rel="stylesheet" href="css/cadastro.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+                <span>SupleStock</span>
+            </div>
+
+            <nav class="menu">
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-box"></i>
+                    <span>Estoque</span>
+                </a>
+
+                <a href="#" class="menu-item active">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Usuários</span>
+                </a>
+
+            </nav>
+
+            <a href="#" class="logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Sair</span>
+            </a>
+
+        </aside>
+
+        <main class="content">
+
+            <header class="header">
+
+                <div></div>
+
+                <div class="user-info">
+                    <div class="avatar">J</div>
+                    <span>João</span>
+                </div>
+
+            </header>
+
+            <section class="cards-container">
+
+                <div class="card form-card">
+
+                    <h2>Cadastrar Usuário</h2>
+
+                    <form id="userForm">
+
+                        <div class="form-group">
+                            <label for="nome">NOME COMPLETO</label>
+                            <input
+                                type="text"
+                                id="nome"
+                                placeholder="Ex.: João Silva"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-MAIL</label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="usuario@email.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="perfil">PERFIL DE ACESSO</label>
+
+                            <select id="perfil" required>
+
+                                <option value="">
+                                    Selecione um Perfil
+                                </option>
+
+                                <option value="Administrador">
+                                    Administrador
+                                </option>
+
+                                <option value="Gerente">
+                                    Gerente
+                                </option>
+
+                                <option value="Operador">
+                                    Operador
+                                </option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="senha">SENHA</label>
+
+                            <input
+                                type="password"
+                                id="senha"
+                                placeholder="••••••••••"
+                                required>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn-primary">
+
+                            CADASTRAR USUÁRIO
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <div class="card table-card">
+
+                    <h2>Usuários Cadastrados</h2>
+
+                    <div class="filter-container">
+
+                        <label for="filtroPerfil">
+                            Filtrar por:
+                        </label>
+
+                        <select id="filtroPerfil">
+
+                            <option value="Todos">
+                                Todos
+                            </option>
+
+                            <option value="Administrador">
+                                Administrador
+                            </option>
+
+                            <option value="Gerente">
+                                Gerente
+                            </option>
+
+                            <option value="Operador">
+                                Operador
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>NOME</th>
+                                <th>E-MAIL</th>
+                                <th>PERFIL</th>
+                                <th>STATUS</th>
+                                <th>CADASTRO</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="usuariosTabela">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/usuario.js"></script>
+
+</body>
+
+</html>

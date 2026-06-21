@@ -1,16 +1,6 @@
 {
   "suplementos": [
     {
-      "nome": "creatina",
-      "categoria": "Creatina",
-      "quantidade": "5",
-      "precoCusto": "80",
-      "precoVenda": "140",
-      "lote": "k876",
-      "validade": "2030-05-08",
-      "id": "whBJz-OpyX0"
-    },
-    {
       "nome": "vitaminas",
       "categoria": "Vitaminas",
       "quantidade": "8",
@@ -29,6 +19,36 @@
       "lote": "lot888",
       "validade": "2026-12-12",
       "id": "m4hvugO6lFA"
+    },
+    {
+      "nome": "whey",
+      "categoria": "Proteína",
+      "quantidade": "9",
+      "precoCusto": "100",
+      "precoVenda": "120",
+      "lote": "dsjh",
+      "validade": "2028-10-09",
+      "id": "Y2-TQZ1Wtfk"
+    },
+    {
+      "nome": "whey",
+      "categoria": "Proteína",
+      "quantidade": "9",
+      "precoCusto": "100",
+      "precoVenda": "120",
+      "lote": "dsjh",
+      "validade": "2028-10-09",
+      "id": "E7Z3NK8v6po"
+    },
+    {
+      "nome": "polivitaminico",
+      "categoria": "Vitaminas",
+      "quantidade": "1",
+      "precoCusto": "50",
+      "precoVenda": "100",
+      "lote": "lot50",
+      "validade": "2026-12-25",
+      "id": "8Q-2wSrtk7Q"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

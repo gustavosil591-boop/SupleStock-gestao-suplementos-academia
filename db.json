@@ -49,6 +49,26 @@
       "lote": "lot50",
       "validade": "2026-12-25",
       "id": "8Q-2wSrtk7Q"
+    },
+    {
+      "nome": "creatina",
+      "categoria": "Creatina",
+      "quantidade": "3",
+      "precoCusto": "90",
+      "precoVenda": "100",
+      "lote": "li785",
+      "validade": "2023-08-05",
+      "id": "mM9sDIr"
+    },
+    {
+      "nome": "creatina",
+      "categoria": "Creatina",
+      "quantidade": "1",
+      "precoCusto": "100",
+      "precoVenda": "100",
+      "lote": "sdsa",
+      "validade": "2026-07-05",
+      "id": "dU_uz7P"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

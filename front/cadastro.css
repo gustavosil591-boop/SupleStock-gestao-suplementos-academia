@@ -1,6 +1,4 @@
-/* =========================
-   RESET
-========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,17 +11,13 @@ body {
     color: #333;
 }
 
-/* =========================
-   LAYOUT PRINCIPAL
-========================= */
+
 .container {
     display: flex;
     min-height: 100vh;
 }
 
-/* =========================
-   SIDEBAR
-========================= */
+
 .sidebar {
     width: 240px;
     background: #1f3a5f;
@@ -91,17 +85,13 @@ body {
     margin-top: auto;
 }
 
-/* =========================
-   CONTEÚDO
-========================= */
+
 .content {
     flex: 1;
     padding: 30px;
 }
 
-/* =========================
-   HEADER
-========================= */
+
 .header {
     display: flex;
     justify-content: flex-end;
@@ -131,9 +121,7 @@ body {
     font-weight: bold;
 }
 
-/* =========================
-   CARDS
-========================= */
+
 .cards-container {
     display: flex;
     gap: 25px;
@@ -156,9 +144,7 @@ body {
     color: #1f2937;
 }
 
-/* =========================
-   FORMULÁRIO
-========================= */
+
 .form-card {
     width: 380px;
 }
@@ -221,9 +207,7 @@ body {
     background: #1d4ed8;
 }
 
-/* =========================
-   TABELA
-========================= */
+
 .table-card {
     flex: 1;
 }
@@ -275,9 +259,7 @@ tbody tr:hover {
     background-color: #f8fafc;
 }
 
-/* =========================
-   BADGES
-========================= */
+
 .badge {
     display: inline-block;
 
@@ -289,7 +271,7 @@ tbody tr:hover {
     font-weight: 600;
 }
 
-/* PERFIL */
+
 .admin {
     background: #dbeafe;
     color: #1d4ed8;
@@ -300,7 +282,7 @@ tbody tr:hover {
     color: #7c3aed;
 }
 
-/* STATUS */
+
 .active {
     background: #dcfce7;
     color: #15803d;
@@ -311,9 +293,7 @@ tbody tr:hover {
     color: #dc2626;
 }
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
+
 @media (max-width: 1200px) {
 
     .cards-container {

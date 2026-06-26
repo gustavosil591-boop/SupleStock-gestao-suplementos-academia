@@ -1,10 +1,23 @@
-const API_URL = 'https://special-umbrella-5g777xrqr7pqf45v4-3000.app.github.dev/suplementos';
-
+const API_URL = 'http://localhost:3001/suplementos';
 
 const form = document.getElementById('form-suplemento');
 const tabelaCorpo = document.getElementById('tabela-corpo');
 const filtroCat = document.getElementById('filtro-categoria');
 const mensagemEl = document.getElementById('mensagem');
+
+function getValidadeBadge(validade) {
+    const hoje = new Date();
+    const dataValidade = new Date(validade);
+    const diffDias = Math.ceil((dataValidade - hoje) / (1000 * 60 * 60 * 24));
+
+    if (diffDias < 0) {
+        return `<span class="badge badge-vencido">Vencido<small>${validade}</small></span>`;
+    } else if (diffDias <= 30) {
+        return `<span class="badge badge-proximo">Próximo do Vencimento<small>${validade}</small></span>`;
+    } else {
+        return `<span class="badge badge-ok">No Prazo<small>${validade}</small></span>`;
+    }
+}
 
 async function carregarEstoque() {
     try {
@@ -35,15 +48,15 @@ async function carregarEstoque() {
     <td>R$ ${Number(produto.precoCusto).toFixed(2)}</td>
     <td>R$ ${Number(produto.precoVenda).toFixed(2)}</td>
     <td>${produto.lote}</td>
-    <td>${produto.validade}</td>
+    <td>${getValidadeBadge(produto.validade)}</td>
     <td><button class="btn-excluir">Excluir</button></td>
 `;
 
-linha.querySelector('.btn-excluir').addEventListener('click', function() {
-    excluirProduto(produto.id);
-});
+            linha.querySelector('.btn-excluir').addEventListener('click', function() {
+                excluirProduto(produto.id);
+            });
 
-tabelaCorpo.appendChild(linha);
+            tabelaCorpo.appendChild(linha);
         });
 
     } catch (erro) {

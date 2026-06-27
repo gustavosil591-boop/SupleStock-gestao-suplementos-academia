@@ -41,16 +41,6 @@
       "id": "E7Z3NK8v6po"
     },
     {
-      "nome": "polivitaminico",
-      "categoria": "Vitaminas",
-      "quantidade": "1",
-      "precoCusto": "50",
-      "precoVenda": "100",
-      "lote": "lot50",
-      "validade": "2026-12-25",
-      "id": "8Q-2wSrtk7Q"
-    },
-    {
       "nome": "creatina",
       "categoria": "Creatina",
       "quantidade": "3",
@@ -69,6 +59,16 @@
       "lote": "sdsa",
       "validade": "2026-07-05",
       "id": "dU_uz7P"
+    },
+    {
+      "nome": "Vitamina",
+      "categoria": "Vitaminas",
+      "quantidade": "1",
+      "precoCusto": "50",
+      "precoVenda": "70",
+      "lote": "ou458",
+      "validade": "2026-06-28",
+      "id": "X-r4eTI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

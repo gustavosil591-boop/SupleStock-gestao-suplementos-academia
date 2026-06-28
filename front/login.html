@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-vindo</title>
-    <link rel="stylesheet" href="style_.css">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="Logo do Site" class="logo">
-        <h1>SupleStock</h1>
-        <p>Gerencie seu estoque com inteligência</p>
-    </header>
-    <main>
-        <h1>Bem-vindo de volta</h1>
-        <p>Entre com suas credenciais</p>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="seu@email.com">
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" placeholder="***********">
-        <button type="submit" id="btn">Entrar</button>
+    <div class="auth-container">
+        <aside class="auth-left">
+            <div class="brand">
+                <img class="logo" src="img/logo.png" alt="SupleStock logo">
+                <h1>SupleStock</h1>
+                <p>Gerencie seu estoque com inteligência</p>
+            </div>
+        </aside>
 
-        <p>Ou continue com</p>
-        <button class="social-btn google">Google</button>
+        <section class="auth-right">
+            <div class="auth-card">
+                <h2>Bem-vindo de volta</h2>
+                <p class="lead">Entre com suas credenciais</p>
 
-        <p>Não tem uma conta? <a href="signup.html">Criar conta</a></p>
-    </main>
-    <footer>
-        
-    </footer>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••">
+                </div>
+
+                <button id="btnLogin" class="btn-primary">ENTRAR</button>
+
+                <div class="divider">Ou continue com</div>
+
+                <button class="social-btn google">Entrar com o Google</button>
+
+                <div class="links muted">Não tem uma conta? <a href="signup.html">Criar conta</a></div>
+            </div>
+        </section>
+    </div>
+
     <script>
-        document.getElementById('btn').addEventListener('click', () => {
-        window.location.href = 'cadastrar_produto.html';
+        document.getElementById('btnLogin').addEventListener('click', () => {
+            window.location.href = 'cadastrar_produto.html';
         });
     </script>
+</body>
 </html>

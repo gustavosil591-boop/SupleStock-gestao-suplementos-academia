@@ -1,40 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se</title>
-    <link rel="stylesheet" href="style_.css">
+    <title>Cadastro</title>
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="Logo do Site" class="logo">
-        <h1>SupleStock</h1>
-        <p>Gerencie seu estoque com inteligência</p>
-    </header>
-    <main>
-        <h1>Cadastre-se</h1>
-        <p>Insira seus dados abaixo</p>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Maria">
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" name="sobrenome" placeholder="Silva">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="seu@email.com">
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" placeholder="***********">
-        <label for="confirmPassword">Repita a senha:</label>
-        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="***********">
-        <button id="btn" type="button">Cadastrar</button>
+    <div class="auth-container">
+        <aside class="auth-left">
+            <div class="brand">
+                <img class="logo" src="img/logo.png" alt="SupleStock logo">
+                <h1>SupleStock</h1>
+                <p>Gerencie seu estoque com inteligência</p>
+            </div>
+        </aside>
 
-        <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
-    </main>
-    <footer>
-        
-    </footer>
+        <section class="auth-right">
+            <div class="auth-card">
+                <h2>Cadastre-se</h2>
+                <p class="lead">Insira seus dados abaixo</p>
+
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Maria">
+                </div>
+
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Silva">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Repita a senha</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••">
+                </div>
+
+                <button id="btnSignup" class="btn-primary">Cadastrar</button>
+
+                <div class="links muted">Já tem uma conta? <a href="login.html">Entrar</a></div>
+            </div>
+        </section>
+    </div>
+
     <script>
-        document.getElementById('btn').addEventListener('click', () => {
-        window.location.href = '../index.html';
+        document.getElementById('btnSignup').addEventListener('click', () => {
+            window.location.href = 'login.html';
         });
     </script>
+</body>
 </html>

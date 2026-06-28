@@ -1,4 +1,25 @@
-const API_URL = 'http://localhost:3001/suplementos';
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { 
+    getFirestore, 
+    collection, 
+    addDoc, 
+    getDocs, 
+    deleteDoc, 
+    doc 
+} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyB6dz1GREueNHbvlBqDAxOky2OZ89zzLTU",
+    authDomain: "gest-c9436.firebaseapp.com",
+    projectId: "gest-c9436",
+    storageBucket: "gest-c9436.firebasestorage.app",
+    messagingSenderId: "631199034647",
+    appId: "1:631199034647:web:94b7fc0bdf2155cd365b52",
+    measurementId: "G-1ZN2TYMV4N"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 const form = document.getElementById('form-suplemento');
 const tabelaCorpo = document.getElementById('tabela-corpo');
@@ -21,8 +42,12 @@ function getValidadeBadge(validade) {
 
 async function carregarEstoque() {
     try {
-        let resposta = await fetch(API_URL);
-        let produtos = await resposta.json();
+        const querySnapshot = await getDocs(collection(db, "suplementos"));
+        let produtos = [];
+        
+        querySnapshot.forEach((doc) => {
+            produtos.push({ id: doc.id, ...doc.data() });
+        });
 
         let categoriaSelecionada = filtroCat.value;
 
@@ -42,15 +67,15 @@ async function carregarEstoque() {
         produtos.forEach(function(produto) {
             let linha = document.createElement('tr');
             linha.innerHTML = `
-    <td>${produto.nome}</td>
-    <td>${produto.categoria}</td>
-    <td>${produto.quantidade}</td>
-    <td>R$ ${Number(produto.precoCusto).toFixed(2)}</td>
-    <td>R$ ${Number(produto.precoVenda).toFixed(2)}</td>
-    <td>${produto.lote}</td>
-    <td>${getValidadeBadge(produto.validade)}</td>
-    <td><button class="btn-excluir">Excluir</button></td>
-`;
+                <td>${produto.nome}</td>
+                <td>${produto.categoria}</td>
+                <td>${produto.quantidade}</td>
+                <td>R$ ${Number(produto.precoCusto).toFixed(2)}</td>
+                <td>R$ ${Number(produto.precoVenda).toFixed(2)}</td>
+                <td>${produto.lote}</td>
+                <td>${getValidadeBadge(produto.validade)}</td>
+                <td><button class="btn-excluir">Excluir</button></td>
+            `;
 
             linha.querySelector('.btn-excluir').addEventListener('click', function() {
                 excluirProduto(produto.id);
@@ -61,7 +86,7 @@ async function carregarEstoque() {
 
     } catch (erro) {
         console.error('Erro ao carregar estoque:', erro);
-        tabelaCorpo.innerHTML = '<tr><td colspan="8" style="text-align:center; color:red;">Erro ao conectar com o servidor. Verifique se o JSON-Server está rodando.</td></tr>';
+        tabelaCorpo.innerHTML = '<tr><td colspan="8" style="text-align:center; color:red;">Erro ao conectar com o banco de dados do Firebase.</td></tr>';
     }
 }
 
@@ -71,19 +96,15 @@ form.addEventListener('submit', async function(evento) {
     let novoSuplemento = {
         nome: document.getElementById('nome').value,
         categoria: document.getElementById('categoria').value,
-        quantidade: document.getElementById('quantidade').value,
-        precoCusto: document.getElementById('precoCusto').value,
-        precoVenda: document.getElementById('precoVenda').value,
+        quantidade: parseInt(document.getElementById('quantidade').value),
+        precoCusto: parseFloat(document.getElementById('precoCusto').value),
+        precoVenda: parseFloat(document.getElementById('precoVenda').value),
         lote: document.getElementById('lote').value,
         validade: document.getElementById('validade').value
     };
 
     try {
-        await fetch(API_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(novoSuplemento)
-        });
+        await addDoc(collection(db, "suplementos"), novoSuplemento);
 
         form.reset();
         mostrarMensagem('Produto cadastrado com sucesso!', 'green');
@@ -91,7 +112,7 @@ form.addEventListener('submit', async function(evento) {
 
     } catch (erro) {
         console.error('Erro ao cadastrar:', erro);
-        mostrarMensagem('Erro ao cadastrar. Verifique o servidor.', 'red');
+        mostrarMensagem('Erro ao cadastrar no Firebase.', 'red');
     }
 });
 
@@ -99,12 +120,12 @@ async function excluirProduto(id) {
     if (!confirm('Deseja excluir este produto?')) return;
 
     try {
-        await fetch(API_URL + '/' + id, { method: 'DELETE' });
+        await deleteDoc(doc(db, "suplementos", id));
         carregarEstoque();
 
     } catch (erro) {
         console.error('Erro ao excluir:', erro);
-        alert('Erro ao excluir o produto.');
+        alert('Erro ao excluir o produto do Firebase.');
     }
 }
 

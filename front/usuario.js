@@ -91,10 +91,11 @@ function renderizarTabela() {
             perfilClasse = "operator";
         }
 
-       const statusClasse =
-    usuario.status === "ATIVO"
-        ? "status-ativo"
-        : "status-inativo";
+        const statusClasse =
+            usuario.status === "ATIVO"
+                ? "active"
+                : "inactive";
+
         tabela.innerHTML += `
             <tr>
                 <td>${usuario.nome}</td>

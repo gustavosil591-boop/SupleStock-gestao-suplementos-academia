@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupleStock</title>
+    <link rel="stylesheet" href="front/style.css">
+</head>
+<body>
+    <header>
+        <img src="front/img/logo.png" alt="Logo do Site" class="logo">
+        <h1>SupleStock</h1>
+        <p>Gerencie seu estoque com inteligência</p>
+    </header>
+    <main>
+        <h1>Bem-vindo</h1>
+        <p>A supleStock é uma solução completa para gerenciar seu estoque de suplementos.</p>
+        
+        <button type="submit" id="btn">Entrar</button>
+        <button type="submit" id="btn2">Cadastre-se</button>
+    </main>
+    <footer>
+        
+    </footer>
+    <script>
+        document.getElementById('btn').addEventListener('click', () => {
+        window.location.href = 'front/login.html';
+        });
+        document.getElementById('btn2').addEventListener('click', () => {
+        window.location.href = 'front/signup.html';
+        });
+    </script>
+</html>

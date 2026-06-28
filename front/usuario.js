@@ -38,7 +38,6 @@ usuarios.push(
 renderizarTabela();
 
 form.addEventListener("submit", function (e) {
-
     e.preventDefault();
 
     const nome = document.getElementById("nome").value.trim();
@@ -47,7 +46,6 @@ form.addEventListener("submit", function (e) {
     const senha = document.getElementById("senha").value;
 
     if (!nome || !email || !perfil || !senha) {
-
         alert("Preencha todos os campos.");
         return;
     }
@@ -63,16 +61,13 @@ form.addEventListener("submit", function (e) {
     });
 
     renderizarTabela();
-
     form.reset();
-
     alert("Usuário cadastrado com sucesso!");
 });
 
 filtroPerfil.addEventListener("change", renderizarTabela);
 
 function renderizarTabela() {
-
     tabela.innerHTML = "";
 
     const perfilSelecionado = filtroPerfil.value;
@@ -90,34 +85,30 @@ function renderizarTabela() {
 
         if (usuario.perfil === "Administrador") {
             perfilClasse = "admin";
-        }
-        else if (usuario.perfil === "Gerente") {
+        } else if (usuario.perfil === "Gerente") {
             perfilClasse = "manager";
+        } else if (usuario.perfil === "Operador") {
+            perfilClasse = "operator";
         }
 
-        const statusClasse =
-            usuario.status === "ATIVO"
-                ? "active"
-                : "inactive";
-
+       const statusClasse =
+    usuario.status === "ATIVO"
+        ? "status-ativo"
+        : "status-inativo";
         tabela.innerHTML += `
             <tr>
                 <td>${usuario.nome}</td>
-
                 <td>${usuario.email}</td>
-
                 <td>
                     <span class="badge ${perfilClasse}">
                         ${usuario.perfil}
                     </span>
                 </td>
-
                 <td>
                     <span class="badge ${statusClasse}">
                         ${usuario.status}
                     </span>
                 </td>
-
                 <td>${usuario.dataCadastro}</td>
             </tr>
         `;

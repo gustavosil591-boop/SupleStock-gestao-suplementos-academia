@@ -400,6 +400,20 @@ tbody td {
     width: 100%;
   }
 }
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.admin { background: #dbeafe; color: #1d4ed8; }
+.manager { background: #ede9fe; color: #7c3aed; }
+.operator { background: #f3f4f6; color: #374151; }
+
+.status-ativo { background: #dcfce7; color: #15803d; }
+.status-inativo { background: #fee2e2; color: #dc2626; }
 
 @media (max-width: 640px) {
   .sidebar {
@@ -409,4 +423,6 @@ tbody td {
   .logo-text, .nav-item span, .sidebar-logout span { display: none; }
   .main-wrapper { margin-left: 60px; }
   .content { padding: 16px; gap: 16px; }
+
+
 }

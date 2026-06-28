@@ -5,6 +5,15 @@ import {
     GoogleAuthProvider 
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
+
+if (localStorage.getItem("contaCriada") === "true") {
+    setTimeout(() => {
+        alert("Conta criada com sucesso! Faça seu login.");
+    }, 500);
+
+    localStorage.removeItem("contaCriada");
+}
+
 const firebaseConfig = {
     apiKey: "AIzaSyB6dz1GREueNHbvlBqDAxOkY2OZ89zzLTU",
     authDomain: "gest-c9436.firebaseapp.com",

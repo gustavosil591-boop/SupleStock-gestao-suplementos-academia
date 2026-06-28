@@ -2,7 +2,7 @@ const form = document.getElementById("userForm");
 const tabela = document.getElementById("usuariosTabela");
 const filtroPerfil = document.getElementById("filtroPerfil");
 
-let usuarios = [];
+let usuarios = JSON.parse(localStorage.getItem("usuariosSupleStock")) || [];
 
 function renderizarTabela() {
     tabela.innerHTML = "";
@@ -86,6 +86,8 @@ form.addEventListener("submit", function (e) {
         status: "ATIVO",
         dataCadastro: dataAtual
     });
+
+    localStorage.setItem("usuariosSupleStock", JSON.stringify(usuarios));
 
     renderizarTabela();
     form.reset();

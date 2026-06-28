@@ -103,7 +103,7 @@ function renderizarTabela() {
                 <td>
                     <span class="badge ${perfilClasse}">
                         ${usuario.perfil}
-                    </span>
+                    </span>0
                 </td>
                 <td>
                     <span class="badge ${statusClasse}">

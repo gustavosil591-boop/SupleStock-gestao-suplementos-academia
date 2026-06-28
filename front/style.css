@@ -134,6 +134,16 @@ input[type="email"], input[type="password"] {
         background: linear-gradient(135deg, #033258 0%, #1a5276 100%);
     }
 
+    .auth-right::before {
+        content: 'SupleStock';
+        display: block;
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
     .auth-card {
         background: #fff;
         padding: 30px 24px;

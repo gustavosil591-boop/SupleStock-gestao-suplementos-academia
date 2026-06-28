@@ -1,6 +1,7 @@
 # 🏋️‍♂️ Sistema de Gestão de Suplementos para Academias - SupleStock
 
-> **Status do Projeto:** Em Desenvolvimento
+> **Status do Projeto:** ✅ Concluído
+
 
 ## 🎯 Objetivo do Projeto
 Desenvolver um aplicativo funcional de controle de suplementos voltado para academias. O sistema permitirar cadastrar produtos, registrar entradas e saídas, acompanhar o nível de estoque e apoiar a organização das vendas de forma simples e prática e terá ícones de alerta de válidade como "produto dentro do prazo", "produto prestes a se vencer" e "produto vencido", com isso o íntuito é tentar reduzir perdas.
@@ -12,12 +13,16 @@ Projeto desenvolvido para a disciplina de Engenharia de Software.
 * Roberth Ravell Lima Barros
 
 ## 🚀 Funcionalidades
-- [x] Documentação e Setup do Projeto
-- [x] Cadastro de Suplementos (Nome, categoria, quantidade, lote, etc.)
+
+- [x] Tela de Login com autenticação
+- [x] Cadastro de Suplementos (Nome, categoria, quantidade, lote, preço e validade)
 - [x] Visualização de Estoque em tempo real
-- [x] Integração com Banco de Dados persistente (JSON-Server)
-- [x] Separação e filtragem por Categoria
+- [x] Filtragem por Categoria
 - [x] Exclusão de produtos do estoque
+- [x] Alertas visuais de validade por cores
+- [x] Cadastro e listagem de Usuários
+- [x] Deploy em produção (Vercel)
+- [x] Banco de dados persistente (Firestore – Firebase)
 
 ## 🚀 Funcionalidades  Adicionais
 
@@ -28,11 +33,12 @@ Projeto desenvolvido para a disciplina de Engenharia de Software.
 * **Gestão de Inventário por Lotes:** Cadastro detalhado de suplementos vinculando quantidades exatas às suas respectivas datas de vencimento.
 
 ## 🛠️ Tecnologias Utilizadas
-* **Ferramenta de Design:** Figma (Prototipagem)
-* **Ambiente de desenvolvimento:** Github Codespace
-* **Ospedagem do Site:** Vercel (será usado futuramente)
-* **Linguagem de Programação:** HTML, CSS e JavaScript
-* **Banco de Dados:** JSON-Server
+- **Design:** Figma (Prototipagem)
+- **Frontend:** HTML, CSS e JavaScript
+- **Banco de Dados:** Firebase Firestore
+- **Hospedagem:** Vercel
+- **Ambiente de Desenvolvimento:** GitHub Codespaces
+- **Versionamento:** Git e GitHub
   
 ## Link de Acompanhamento
 O gerenciamento de tarefas, divisões da Sprint e acompanhamento do progresso da equipe foram organizados através do trello 
@@ -58,24 +64,12 @@ O design e o fluxo de navegação do sistema foram desenvolvidos utilizando o Fi
 ### Tela de Cadastro de Usuário:
 ![alt text](prototipo/c59f9184-1398-412a-83ac-a8e7d9966e76.jpg)
 
-## 🚀 Como Executar o Projeto Localmente
+## 🚀 Link do deploy feito no Vercel
+- **Vercel:** https://suple-stock-gestao-supl-git-934b58-gustavosil591-boops-projects.vercel.app/
 
-### Pré-requisitos
-* Node.js instalado
-* JSON-Server instalado globalmente
-
-### Passo a passo
-
-### 1. Instale o JSON-Server (só na primeira vez)
-npm install -g json-server
-
-### 2. Instale as dependências do projeto (só uma vez)
-npm install
-
-### 3. Suba o projeto completo
-npm start
 
 ## 🚀 Próximos Passos (Sprint 3)
+> **concluida**
 * Sistema final sem bugs.
 * Implementação dos alertas visuais de validade (🔴🟡🟢) na tabela de estoque.
 * Tela de login funcional.

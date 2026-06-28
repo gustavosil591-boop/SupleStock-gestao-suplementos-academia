@@ -426,3 +426,73 @@ tbody td {
 
 
 }
+@media (max-width: 768px) {
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+    box-sizing: border-box;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .sidebar-logout {
+    margin-top: 0;
+  }
+
+  .logo-text {
+    display: none; 
+  }
+
+
+  .main-wrapper {
+    margin-left: 0; 
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  .topbar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    padding: 10px 0;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100% !important; 
+    margin: 0;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Rolagem suave no iOS */
+  }
+
+  table {
+    min-width: 600px; 
+  }
+}

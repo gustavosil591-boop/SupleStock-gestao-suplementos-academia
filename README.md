@@ -65,8 +65,7 @@ O design e o fluxo de navegação do sistema foram desenvolvidos utilizando o Fi
 ![alt text](prototipo/c59f9184-1398-412a-83ac-a8e7d9966e76.jpg)
 
 ## 🚀 Link do deploy feito no Vercel
-- **Vercel:** https://suple-stock-gestao-supl-git-934b58-gustavosil591-boops-projects.vercel.app/
-
+- **Vercel:** https://suple-stock-gestao-suplementos-acad.vercel.app/
 
 ## 🚀 Próximos Passos (Sprint 3)
 > **concluida**
